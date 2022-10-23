@@ -24,7 +24,7 @@
 <html>
   <head>
     <title>Submit Page</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css" />
   </head>
   <body>
     <div class="container">
