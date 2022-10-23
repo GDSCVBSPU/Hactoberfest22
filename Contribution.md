@@ -39,12 +39,10 @@ git push origin branch-name
 * 3. Food Ordering app
 
 ### C. Programming Questions
-* 1. Do simple questions on pattern, conditionals etc.
+* 1. Do simple questions on pattern, conditionals, loops, Maths etc.
 
 ### F. UI Design
-* 1. Design a logo for a Fintech company.
-* 2. Design a dashboard page for a tracker app.
-* 3. Design a landing page for a portfolio website (generic).
+* 1. If you have any UI of an app/web and want to do open source then you can add your design in this folder.
 
 ## Rules for making PULL REQUEST
 
