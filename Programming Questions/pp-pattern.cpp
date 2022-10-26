@@ -1,29 +1,41 @@
-// if n = 5
+//1234554321
+//1234**4321
+//123****321
+//12******21
+//1********1
 
-// * * * * *
-// * * * * 
-// * * * 
-// * * 
-// *
-
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int main()
 {
     int n;
     cin>>n;
-    // taking input how many lines to be printed
-
-   int i=n;
-   while(i>=1){
-    int j=1;
-    while(j<=i){
-        cout<<"* ";
-        j++;
+    int i=1;
+    while(i<=n){
+        int j =0;
+        int num1 =1;
+        while(j<=n-i){
+            cout<<num1;
+            num1++;
+            j++;
+        }
+        int k=0;
+        while(k<i-1){
+            cout<<"*";
+            k++;
+        }
+        int l=0;
+        while(l<i-1){
+            cout<<"*";
+            l++;
+        }
+        int m =n-i+1;
+        while(m>=1){
+            cout<<m;
+            m--;
+        }
+ cout<<endl;
+        i++;
     }
-    cout<<endl;
-    i--;
-   }
-
-    return 0;
+ return 0;
 }
