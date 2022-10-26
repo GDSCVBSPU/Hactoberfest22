@@ -1,25 +1,33 @@
-// Special pattern n = 5
+//    *
+//   **
+//  ***
+// ****
 
-//     #
-//    ##
-//   ###
-//  ####
-// #####
-
-
-
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-
-int main() {
-    int n = 5;
-    // cin >> n;
-    for(int i = 1; i <= n; ++i) {
-        for(int j = 1; j <= n; ++j) {
-            if(j <= n - i) cout << " ";
-            else cout << "#";
-        }
-        cout << "\n";
+int main()
+{
+    int n;
+    cin>>n;
+    int i=1;
+    while (i<=n)
+    {
+     int space = n-i;
+     while (space)
+     {
+        cout<<" ";
+        space--;
+     }
+     int j=1;
+     while (j<=i)
+     {
+        cout<<"*";
+        j++;
+     }
+     cout<<endl;
+     i++;
+     
     }
-    return 0;
+    
+ return 0;
 }
