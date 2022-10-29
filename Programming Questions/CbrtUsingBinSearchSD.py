@@ -1,4 +1,6 @@
 def cbrt(n, p):
+    if n == 0: return 0.0
+
     pres = 10**-p
     start = 0.0
     end = n
@@ -13,10 +15,13 @@ def cbrt(n, p):
         else:
             end = mid
 
+def sign(n):
+    return '-' if n < 0 else ''
+
 def main():
     n = float(input('Enter a number: '))
     p = int(input('Enter precision: '))
-    print(f'Cube root of {n} is {round(cbrt(n, p), p)}')
+    print(f'Cube root of {n} is {sign(n)}{round(cbrt(abs(n), p), p)}')
 
 if __name__=="__main__":
     main()
